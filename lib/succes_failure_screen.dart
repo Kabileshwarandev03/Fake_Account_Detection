@@ -21,27 +21,27 @@ class _CheckSuccessRFailureState extends State<CheckSuccessRFailure> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Constant.primaryColor,
-        title: Text(
-          "Fake Account Detection",
-          style: TextStyle(
-            color: Colors.white,
-            fontFamily: Constant.fontName,
-          ),
-        ),
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Icon(
-            Icons.chevron_left,
-            size: 28,
-          ),
-          color: Colors.white,
-        ),
-      ),
+      // appBar: AppBar(
+      //   elevation: 0,
+      //   backgroundColor: Constant.primaryColor,
+      //   title: Text(
+      //     "Fake Account Detection",
+      //     style: TextStyle(
+      //       color: Colors.white,
+      //       fontFamily: Constant.fontName,
+      //     ),
+      //   ),
+      //   leading: IconButton(
+      //     onPressed: () {
+      //       // Navigator.pop(context);
+      //     },
+      //     icon: const Icon(
+      //       Icons.chevron_left,
+      //       size: 28,
+      //     ),
+      //     color: Constant.primaryColor,
+      //   ),
+      // ),
       body: Column(
         children: [
           if (widget.succes)
@@ -73,7 +73,7 @@ class _CheckSuccessRFailureState extends State<CheckSuccessRFailure> {
             Column(
               children: [
                 const SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
                 Align(
                   alignment: Alignment.topCenter,
