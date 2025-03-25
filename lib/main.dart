@@ -46,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   bool signIn = false;
   List passwordList = ["12345678", "abcd1234", "demodemo"];
+  List userlist = ["priya", "deepika", "raji"];
 
   @override
   void initState() {
@@ -106,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Container(
                             margin: EdgeInsets.only(
                                 top: MediaQuery.sizeOf(context).height * 0.05),
-                            height: MediaQuery.sizeOf(context).height * 0.8,
+                            height: MediaQuery.sizeOf(context).height * 0.6,
                             width: MediaQuery.sizeOf(context).width * 0.35,
                             decoration: const BoxDecoration(
                                 // color: Color(0XFF8ECAFF),
@@ -218,7 +219,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                                   .text.isNotEmpty &&
                                               userNameTextEditingController
                                                       .text !=
-                                                  "demo" &&
+                                                  "demo" "priya" "deepika" "raji"&&
                                               signIn &&
                                               isVisibleMsg
                                           ? Container(
